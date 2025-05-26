@@ -1,0 +1,85 @@
+#  Εφαρμογή Κρατήσεων σε Εστιατόρια (React Native + Node.js)
+
+##  Περιγραφή
+Η παρούσα εφαρμογή επιτρέπει σε χρήστες να:
+- συνδεθούν με email και κωδικό
+- δουν όλα τα διαθέσιμα εστιατόρια
+- κάνουν κρατήσεις
+- επεξεργαστούν ή διαγράψουν τις κρατήσεις τους
+
+Η εφαρμογή σχεδιάστηκε με mobile-first προσέγγιση (React Native + Expo), με backend σε Node.js/Express και βάση δεδομένων MariaDB μέσω XAMPP.
+
+---
+
+##  Τεχνολογίες
+
+### Frontend (Mobile):
+- React Native (Expo)
+- React Navigation
+- Axios
+- AsyncStorage (Persistent Login)
+
+### Backend:
+- Node.js + Express.js
+- JWT Authentication (jsonwebtoken)
+- bcryptjs (hashing passwords)
+- MySQL2 Driver (MariaDB)
+
+### Database:
+- MariaDB μέσω XAMPP (phpMyAdmin)
+
+---
+
+##  Οδηγίες Εκτέλεσης
+
+### Backend (API)
+```bash
+cd restapp-backend
+npm install
+node server.js
+```
+> Το API τρέχει στο http://localhost:5000 ή http://192.168.X.X:5000
+
+### Frontend (React Native App)
+```bash
+cd restapp-frontend
+npm install
+npx expo start
+```
+> Άνοιξε μέσω Expo Go στο κινητό ή emulator
+
+---
+
+##  Περιβάλλον & Συνδέσεις
+
+- Το frontend συνδέεται με το API μέσω `config/api.js`, όπου ορίζεται το `baseURL`.
+- Το API συνδέεται με MariaDB, οι ρυθμίσεις είναι στο `db.js`.
+
+---
+
+##  Demo Credentials
+text
+Email: user1@example.com
+Password: 123456
+```
+
+---
+
+##  Screenshots
+- Login οθόνη με background
+- Εμφάνιση εστιατορίων
+- Λίστα κρατήσεων
+- Επεξεργασία κράτησης
+
+---
+
+##  Δομή Project
+```
+restbooking-project/
+├── restapp-backend/
+├── restapp-frontend/
+├── database.sql
+├── README.md
+└── presentation.pptx
+```
+
